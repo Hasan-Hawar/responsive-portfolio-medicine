@@ -224,20 +224,24 @@ section .title::after {
 }
 
 /* about section styling */
+.about{
+  background-color: #f7f7f7;
+}
 .about .title::after {
-  content: "who i am";
+  content: "Wer bin";
 }
 .about .about-content .left {
-  width: 40%;
+  width: 50%;
 }
 .about .about-content .left img {
-  height: 300px;
+  width: 500px;
   border-radius: 3px;
 }
 .about .about-content .right {
-  width: 60%;
+  width: 50%;
 }
 .about .about-content .right .text {
+  min-height: 80px;
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -268,16 +272,16 @@ section .title::after {
 /* services section styling */
 .services,
 .teams {
-  color: #fff;
-  background: #111;
+  color: #222;
+  background: #f7f7f7;
 }
 .services .title::before,
 .teams .title::before {
-  background: #fff;
+  background: #222;
 }
 .services .title::after,
 .teams .title::after {
-  background: #111;
+  background: #f7f7f7;
   content: "what i provide";
 }
 .services .serv-content .card {
@@ -313,9 +317,21 @@ section .title::after {
 }
 
 /* skills section styling */
-
+.skills{
+  background-color: #222;
+}
+.skills .title{
+  color: #f7f7f7;
+}
+.skills .title::before{
+  background-color: #f7f7f7;
+}
 .skills .title::after {
   content: "what i know";
+  background-color: #222;
+}
+.skills .skills-content{
+  color: #f7f7f7;
 }
 .skills .skills-content .column {
   width: calc(50% - 30px);
@@ -389,18 +405,25 @@ section .title::after {
 
 /* teams section styling */
 .teams .title::after {
-  content: "who with me";
+  content: "sind";
 }
 .teams .carousel .card {
-  background: #222;
+  background: #f7f7f7;
   border-radius: 6px;
   padding: 25px 35px;
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
 }
+.teams .carousel .card p{
+  font-size: 14px;
+}
 .teams .carousel .card:hover {
-  background: crimson;
+  background: #222;
+  color: #f7f7f7;
+}
+.teams .carousel .card:hover .text{
+  color: crimson;
 }
 .teams .carousel .card .box {
   display: flex;
@@ -426,7 +449,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img {
-  border-color: #fff;
+  border-color: #f7f7f7;
 }
 .owl-dots {
   text-align: center;
