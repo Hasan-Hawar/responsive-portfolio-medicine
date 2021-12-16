@@ -1,5 +1,6 @@
 /*  import google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400;1,500&display=swap');
 
 * {
   margin: 0;
@@ -41,7 +42,8 @@ section {
 .teams,
 .contact,
 footer {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
 }
 .about .about-content,
 .services .serv-content,
@@ -249,9 +251,6 @@ section .title::after {
 .about .about-content .right .text span {
   color: crimson;
 }
-.about .about-content .right p {
-  text-align: justify;
-}
 .about .about-content .right a {
   display: inline-block;
   background: crimson;
@@ -341,9 +340,6 @@ section .title::after {
   font-weight: 600;
   margin-bottom: 10px;
 }
-.skills .skills-content .left p {
-  text-align: justify;
-}
 .skills .skills-content .left a {
   display: inline-block;
   background: crimson;
@@ -414,9 +410,6 @@ section .title::after {
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
-}
-.teams .carousel .card p{
-  font-size: 14px;
 }
 .teams .carousel .card:hover {
   background: #222;
